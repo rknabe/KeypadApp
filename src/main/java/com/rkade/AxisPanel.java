@@ -23,7 +23,7 @@ public class AxisPanel extends JPanel implements DeviceListener, ActionListener,
     private int targetHeight = 0;
 
     public AxisPanel() {
-        target = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("crosshair.png"));
+        target = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("Keypad.png"));
     }
 
     private void setAxisValues(short x, short y) {

@@ -3,20 +3,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.rkade</groupId>
-    <artifactId>RKadeGunConfig</artifactId>
-    <version>1.1.4.0</version>
+    <artifactId>RKadeKeypadConfig</artifactId>
+    <version>1.0.0.0</version>
     <packaging>jar</packaging>
-    <description>RKADE Gun Configuration Utility</description>
-    <name>RKadeGunConfig</name>
+    <description>RKADE Keypad Configuration Utility</description>
+    <name>RKadeKeypadConfig</name>
     <organization>
         <name>RKADE</name>
     </organization>
-    <inceptionYear>2024</inceptionYear>
+    <inceptionYear>2026</inceptionYear>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>22</maven.compiler.source>
-        <maven.compiler.target>22</maven.compiler.target>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
     </properties>
 
     <repositories>
@@ -54,7 +54,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.6.1</version>
+                <version>3.6.2</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -85,12 +85,12 @@
                         </goals>
                         <configuration>
                             <headerType>gui</headerType>
-                            <outfile>target/RKadeGunConfig.exe</outfile>
-                            <jar>target/RKadeGunConfig-${project.version}.jar</jar>
-                            <errTitle>RKadeGunConfig</errTitle>
-                            <icon>src/main/resources/crosshair.ico</icon>
+                            <outfile>target/RKadeKeypadConfig.exe</outfile>
+                            <jar>target/RKadeKeypadConfig-${project.version}.jar</jar>
+                            <errTitle>RKadeKeypadConfig</errTitle>
+                            <icon>src/main/resources/Keypad.ico</icon>
                             <singleInstance>
-                                <mutexName>com.rkade.RKadeGunConfig</mutexName>
+                                <mutexName>com.rkade.RKadeKeypadConfig</mutexName>
                             </singleInstance>
                             <classPath>
                                 <mainClass>com.rkade.App</mainClass>
@@ -102,12 +102,12 @@
                             </jre>
                             <versionInfo>
                                 <fileVersion>${project.version}</fileVersion>
-                                <fileDescription>Arcade Gun Device Config</fileDescription>
-                                <copyright>Copyright 2024 Rusty Knabe</copyright>
+                                <fileDescription>Arcade Keypad Config</fileDescription>
+                                <copyright>Copyright 2026 Rusty Knabe</copyright>
                                 <productVersion>${project.version}</productVersion>
-                                <productName>RKadeGunConfig</productName>
-                                <internalName>RKadeGunConfig</internalName>
-                                <originalFilename>RKadeGunConfig.exe</originalFilename>
+                                <productName>RKadeKeypadConfig</productName>
+                                <internalName>RKadeKeypadConfig</internalName>
+                                <originalFilename>RKadeKeypadConfig.exe</originalFilename>
                             </versionInfo>
                         </configuration>
                     </execution>
